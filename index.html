@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/framework.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <title>JS Template</title>
+    </head>
+    <body>
+        <!-- start setting -->
+        <div class="setting">
+            <div class="setting-icon">
+                <i class="fa-solid fa-gear"></i>
+            </div>
+            <div class="setting-box setting-color">
+                <h2>Color</h2>
+                <ul>
+                    <li data-color="#80c7e2"></li>
+                    <li data-color="#4797b5"></li>
+                    <li data-color="#607d8b"></li>
+                    <li data-color="#48545a"></li>
+                    <li data-color="#000000"></li>
+                </ul>
+            </div>
+            <div class="setting-box setting-img">
+                <h3>Random Image</h3>
+                <div class="btns">
+                    <button class="yes active" data-random="yes">Yes</button>
+                    <button class="no" data-random="no">No</button>
+                </div>
+            </div>
+            <div class="setting-box setting-bullets">
+                <h3>Show Bullets</h3>
+                <div class="btns">
+                    <button class="yes active" data-show="yes">Yes</button>
+                    <button class="no" data-show="no">No</button>
+                </div>
+            </div>
+            <button class="reset">Reset Options</button>
+        </div>
+        <!-- end setting -->
+        <!-- start nav bullets -->
+        <div class="nav-bullets">
+        </div>
+        <!-- end nav bullets -->
+        <!-- start landing -->
+        <div class="landing">
+            <div class="overlay"></div>
+            <div class="container">
+                <header>
+                        <a href="index.html"><img src="images/logo.png" alt=""></a>
+                        <div class="container-link">
+                            <ul class="links">
+                                <li>
+                                    <a href="#" data-section=".landing" class="active link">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-section=".about-us" class="link">About Us</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-section=".Feature" class="link">Feature</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-section=".course" class="link">Courses</a>
+                                </li>
+                                <li>
+                                    <a href="#" data-section=".contact" class="link">Contact Us</a>
+                                </li>
+                                <li class="SignUp">
+                                    <a href="#Sign">Sign Up</a>
+                                </li>
+                            </ul>
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                </header>
+            </div>
+            <div class="content">
+                <div class="sign">
+                    <h1>Start Learning Now</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <input type="text" placeholder="E-mail">
+                    <input type="text" placeholder="Password">
+                    <button>Log In</button>
+                </div>  
+                <div class="img">
+                    <img src="images/land (8).jpg" alt="landing img">
+                </div>  
+            </div>
+        </div>
+        <!-- end landing -->
+        <!-- start sign up popup -->
+        <div class="popup-overlay"></div>
+        <div id="Sign" class="signup-page">
+            <div class="sign-content">
+                <div class="title">
+                    <h2>Sign Up</h2>
+                </div>
+                <div class="center">
+                    <div class="user">
+                        <label for="user">User Name:</label>
+                        <input type="text" name="user" id="user">
+                    </div>
+                    <div class="mail">
+                        <label for="mail">E-mail:</label>
+                        <input type="email" name="mail" id="mail">
+                    </div>
+                    <div class="Pass">
+                        <label for="Pass">Password:</label>
+                        <input type="password" name="Pass" id="Pass"></input>
+                    </div>
+                    <button type="submit">Creat Account</button>
+                </div>
+                <div class="footer">
+                    <div class="icons">
+                        <span>Sign Up With</span>
+                        <div class="foot-icon d-flex">
+                            <a href="#google">
+                                <img src="images/search.png" alt="search.jpg">
+                            </a>
+                            <a href="#facebook">
+                                <img src="images/facebook.png" alt="facebook.jpg">
+                            </a>
+                            <a href="#linkedin">
+                                <img src="images/linkedin.png" alt="linkedin.jpg">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="login">
+                        <a href="#login" class="login-btn">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                            Log In
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="sign-img">
+                <img class="sign-land" src="images/signup (4).jpg" alt="signup-img.jpg">
+                <img class="sign-logo" src="images/logo 4.png" alt="">
+            </div>
+            <span class="close">x</span>
+        </div>
+        <!-- end sign up popup -->
+        <!-- start lognin -->
+        <div class="popup-overlay"></div>
+        <div id="login" class="login-page">
+            <span class="close">x</span>
+            <div class="container">
+                <div class="title">
+                    <h2>Login</h2>
+                </div>
+                    <div class="mail">
+                        <label for="mail">E-mail:</label>
+                        <input type="email" name="mail" id="mail">
+                    </div>
+                    <div class="Pass">
+                        <label for="Pass">Password:</label>
+                        <input type="password" name="Pass" id="Pass"></input>
+                    </div>
+                    <div class="forgot">
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit">LOGIN</button>
+                    <div class="sign">
+                        <span>Not a member? 
+                            <a href="#Sign" class="sign-btn">Signup Now</a>
+                        </span>
+                    </div>
+                </div>
+        </div>
+        <!-- end login -->
+        <!-- start static -->
+        <div class="static">
+            <div class="container d-flex">
+                <div class="static-box">
+                    <div class="num-box">
+                        <div class="num" data-goal="50">0</div>
+                        <span>k+</span>
+                    </div>
+                    <p>Student Joined</p>
+                </div>
+                <div class="static-box">
+                    <div class="num-box">
+                        <div class="num" data-goal="10">0</div>
+                        <span>k+</span>
+                    </div>
+                    <p>Online Courses</p>
+                </div>
+                <div class="static-box">
+                    <div class="num-box">
+                        <div class="num" data-goal="220">0</div>
+                        <span>+</span>
+                    </div>
+                    <p>Brands Companies</p>
+                </div>
+                <div class="static-box">
+                    <div class="num-box">
+                        <div class="num" data-goal="100">0</div>
+                        <span>+</span>
+                    </div>
+                    <p>Experienced Instructor</p>
+                </div>
+            </div>
+        </div>
+        <!-- end static -->
+        <!-- start about us -->
+        <div class="container">
+            <section id="About Us" class="about-us">
+                <div class="mission">
+                    <h3>Our Mission</h3>
+                    <div class="image">
+                        <img src="images/mission3.jpg" alt="">
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt saepe nisi impedit,
+                        voluptatibus possimus ratione magnam molestias praesentium suscipit unde nulla architecto porro labore numquam fugiat, 
+                        cumque reiciendis corrupti expedita.
+                    </p>
+                </div>
+                <div class="story">
+                    <h3>Our Story</h3>
+                    <div class="video">
+                        <div class="play"></div>
+                        <video>
+                            <source src="videos/story4.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt saepe nisi impedit,
+                        voluptatibus possimus ratione magnam molestias praesentium suscipit unde nulla architecto porro labore numquam fugiat, 
+                        cumque reiciendis corrupti expedita.
+                    </p>
+                </div>
+            </section>
+        </div>
+        <!-- end about us -->
+        <!-- start Feature -->
+        <section id="Feature" class="Feature">
+            <div class="container">
+                <div class="title">
+                    <h3>Upgrade for unlimitied access to 3000+ courses</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos cumque omnis nisi natus eligendi eaque harum dicta et iste qui? 
+                        Necessitatibus neque dolores incidunt rerum illo accusamus consequuntur, officiis pariatur.</p>
+                </div>
+                <div class="Feature-box">
+                    <div class="cont-feat">
+                        <i class="fa-regular fa-compass"></i>
+                        <h4>Learn Anything</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quisquam omnis facilis consectetur 
+                            nulla quidem repellendus incidunt temporibus earum eligendi fugiat
+                        </p>
+                    </div>
+                    <div class="cont-feat">
+                        <i class="fa-regular fa-money-bill-1"></i>
+                        <h4>Save Money</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quisquam omnis facilis consectetur 
+                            nulla quidem repellendus incidunt temporibus earum eligendi fugiat
+                        </p>
+                    </div>
+                    <div class="cont-feat">
+                        <i class="fa-solid fa-chalkboard-user"></i>
+                        <h4>Flexible Learning</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quisquam omnis facilis consectetur 
+                            nulla quidem repellendus incidunt temporibus earum eligendi fugiat
+                        </p>
+                    </div>
+                    <div class="cont-feat">
+                        <i class="fa-solid fa-award"></i>
+                        <h4>Unlimited Certificates</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quisquam omnis facilis consectetur 
+                            nulla quidem repellendus incidunt temporibus earum eligendi fugiat
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end Feature -->
+        <!-- start timeline -->
+        <section id="Timeline" class="timeline">
+                <div class="container">
+                    <span class="year">2022</span>
+                    <div class="left">
+                        <h4>Event Heading</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam a tempore officia sequi ratione qui optio porro commodi excepturi. Non iure minus deserunt a voluptates ab sint numquam nulla ipsam!
+                        </p>
+                    </div>               
+                    <div class="clear"></div>
+                    <div class="right">
+                        <h4>Event Heading</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam a tempore officia sequi ratione qui optio porro commodi excepturi. Non iure minus deserunt a voluptates ab sint numquam nulla ipsam!
+                        </p>
+                    </div>
+                    <div class="clear"></div>
+                    <span class="year">2021</span>
+                    <div class="left">
+                        <h4>Event Heading</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam a tempore officia sequi ratione qui optio porro commodi excepturi. Non iure minus deserunt a voluptates ab sint numquam nulla ipsam!
+                        </p>
+                    </div>  
+                </div>
+        </section>
+        <!-- end timeline -->
+        <!-- start courses -->
+        <section id="Courses" class="course">
+            <div class="container">
+                <div class="title">
+                    <h3>Most Popular Courses </h3>
+                </div>
+                <div class="Allcontent">
+                    <div class="pre-btn">
+                        <span class="back"></span>
+                    </div>
+                    <div class="container-courses d-flex">
+                        <div class="course-box">
+                            <img src="images/enroll1.jpg" alt="course.jpg">
+                            <div class="course-content">
+                                <p>Company</p>
+                                <h3>Ux Design</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo rem ad vel provident.</p>
+                                <div class="rate d-flex">
+                                    <div class="user d-flex">
+                                        <i class="fa-regular fa-user"></i>
+                                        <p>4.8k</p>
+                                    </div>
+                                    <div class="star d-flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>4.3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-box">
+                            <img src="images/enroll2.jpg" alt="course.jpg">
+                            <div class="course-content">
+                                <p>Company</p>
+                                <h3>Ux Design</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo rem ad vel provident.</p>
+                                <div class="rate d-flex">
+                                    <div class="user d-flex">
+                                        <i class="fa-regular fa-user"></i>
+                                        <p>4.8k</p>
+                                    </div>
+                                    <div class="star d-flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>4.3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-box">
+                            <img src="images/enroll3.jpg" alt="course.jpg">
+                            <div class="course-content">
+                                <p>Company</p>
+                                <h3>Ux Design</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo rem ad vel provident.</p>
+                                <div class="rate d-flex">
+                                    <div class="user d-flex">
+                                        <i class="fa-regular fa-user"></i>
+                                        <p>4.8k</p>
+                                    </div>
+                                    <div class="star d-flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>4.3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-box">
+                            <img src="images/enroll4.jpg" alt="course.jpg">
+                            <div class="course-content">
+                                <p>Company</p>
+                                <h3>Ux Design</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo rem ad vel provident.</p>
+                                <div class="rate d-flex">
+                                    <div class="user d-flex">
+                                        <i class="fa-regular fa-user"></i>
+                                        <p>4.8k</p>
+                                    </div>
+                                    <div class="star d-flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>4.3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-box">
+                            <img src="images/enroll4.jpg" alt="course.jpg">
+                            <div class="course-content">
+                                <p>Company</p>
+                                <h3>Ux Design</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo rem ad vel provident.</p>
+                                <div class="rate d-flex">
+                                    <div class="user d-flex">
+                                        <i class="fa-regular fa-user"></i>
+                                        <p>4.8k</p>
+                                    </div>
+                                    <div class="star d-flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>4.3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-box">
+                            <img src="images/enroll4.jpg" alt="course.jpg">
+                            <div class="course-content">
+                                <p>Company</p>
+                                <h3>Ux Design</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo rem ad vel provident.</p>
+                                <div class="rate d-flex">
+                                    <div class="user d-flex">
+                                        <i class="fa-regular fa-user"></i>
+                                        <p>4.8k</p>
+                                    </div>
+                                    <div class="star d-flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>4.3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-box">
+                            <img src="images/enroll1.jpg" alt="course.jpg">
+                            <div class="course-content">
+                                <p>Company</p>
+                                <h3>Ux Design</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo rem ad vel provident.</p>
+                                <div class="rate d-flex">
+                                    <div class="user d-flex">
+                                        <i class="fa-regular fa-user"></i>
+                                        <p>4.8k</p>
+                                    </div>
+                                    <div class="star d-flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>4.3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-box">
+                            <img src="images/enroll2.jpg" alt="course.jpg">
+                            <div class="course-content">
+                                <p>Company</p>
+                                <h3>Ux Design</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo rem ad vel provident.</p>
+                                <div class="rate d-flex">
+                                    <div class="user d-flex">
+                                        <i class="fa-regular fa-user"></i>
+                                        <p>4.8k</p>
+                                    </div>
+                                    <div class="star d-flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>4.3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-box">
+                            <img src="images/enroll3.jpg" alt="course.jpg">
+                            <div class="course-content">
+                                <p>Company</p>
+                                <h3>Ux Design</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo rem ad vel provident.</p>
+                                <div class="rate d-flex">
+                                    <div class="user d-flex">
+                                        <i class="fa-regular fa-user"></i>
+                                        <p>4.8k</p>
+                                    </div>
+                                    <div class="star d-flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>4.3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-box">
+                            <img src="images/enroll4.jpg" alt="course.jpg">
+                            <div class="course-content">
+                                <p>Company</p>
+                                <h3>Ux Design</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo rem ad vel provident.</p>
+                                <div class="rate d-flex">
+                                    <div class="user d-flex">
+                                        <i class="fa-regular fa-user"></i>
+                                        <p>4.8k</p>
+                                    </div>
+                                    <div class="star d-flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>4.3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-box">
+                            <img src="images/enroll4.jpg" alt="course.jpg">
+                            <div class="course-content">
+                                <p>Company</p>
+                                <h3>Ux Design</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo rem ad vel provident.</p>
+                                <div class="rate d-flex">
+                                    <div class="user d-flex">
+                                        <i class="fa-regular fa-user"></i>
+                                        <p>4.8k</p>
+                                    </div>
+                                    <div class="star d-flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>4.3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-box">
+                            <img src="images/enroll4.jpg" alt="course.jpg">
+                            <div class="course-content">
+                                <p>Company</p>
+                                <h3>Ux Design</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo rem ad vel provident.</p>
+                                <div class="rate d-flex">
+                                    <div class="user d-flex">
+                                        <i class="fa-regular fa-user"></i>
+                                        <p>4.8k</p>
+                                    </div>
+                                    <div class="star d-flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>4.3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-box">
+                            <img src="images/enroll1.jpg" alt="course.jpg">
+                            <div class="course-content">
+                                <p>Company</p>
+                                <h3>Ux Design</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo rem ad vel provident.</p>
+                                <div class="rate d-flex">
+                                    <div class="user d-flex">
+                                        <i class="fa-regular fa-user"></i>
+                                        <p>4.8k</p>
+                                    </div>
+                                    <div class="star d-flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>4.3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-box">
+                            <img src="images/enroll2.jpg" alt="course.jpg">
+                            <div class="course-content">
+                                <p>Company</p>
+                                <h3>Ux Design</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo rem ad vel provident.</p>
+                                <div class="rate d-flex">
+                                    <div class="user d-flex">
+                                        <i class="fa-regular fa-user"></i>
+                                        <p>4.8k</p>
+                                    </div>
+                                    <div class="star d-flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>4.3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-box">
+                            <img src="images/enroll3.jpg" alt="course.jpg">
+                            <div class="course-content">
+                                <p>Company</p>
+                                <h3>Ux Design</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo rem ad vel provident.</p>
+                                <div class="rate d-flex">
+                                    <div class="user d-flex">
+                                        <i class="fa-regular fa-user"></i>
+                                        <p>4.8k</p>
+                                    </div>
+                                    <div class="star d-flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>4.3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-box">
+                            <img src="images/enroll4.jpg" alt="course.jpg">
+                            <div class="course-content">
+                                <p>Company</p>
+                                <h3>Ux Design</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo rem ad vel provident.</p>
+                                <div class="rate d-flex">
+                                    <div class="user d-flex">
+                                        <i class="fa-regular fa-user"></i>
+                                        <p>4.8k</p>
+                                    </div>
+                                    <div class="star d-flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>4.3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-box">
+                            <img src="images/enroll4.jpg" alt="course.jpg">
+                            <div class="course-content">
+                                <p>Company</p>
+                                <h3>Ux Design</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo rem ad vel provident.</p>
+                                <div class="rate d-flex">
+                                    <div class="user d-flex">
+                                        <i class="fa-regular fa-user"></i>
+                                        <p>4.8k</p>
+                                    </div>
+                                    <div class="star d-flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>4.3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-box">
+                            <img src="images/enroll4.jpg" alt="course.jpg">
+                            <div class="course-content">
+                                <p>Company</p>
+                                <h3>Ux Design</h3>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo rem ad vel provident.</p>
+                                <div class="rate d-flex">
+                                    <div class="user d-flex">
+                                        <i class="fa-regular fa-user"></i>
+                                        <p>4.8k</p>
+                                    </div>
+                                    <div class="star d-flex">
+                                        <i class="fa-solid fa-star"></i>
+                                        <p>4.3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="next-btn">
+                        <span class="front"></span>
+                    </div>
+                </div>  
+            </div>         
+        </section>
+        <!-- end courses -->
+        <!-- start Instractor -->
+        <div class="container">
+            <section id="Instractor" class="ins">
+                <div class="title">
+                    <h3>Meet Our Instractor</h3>
+                </div>
+                <div class="ins-box">
+                    <div class="image img-left">
+                        <img src="images/Ins1.jpg" alt="">
+                        <div class="social-media social-media-left">
+                            <div class="icon">
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="info-title">
+                            <h3>Asmaa Ali</h3>
+                            <span>Ui/UX Designer</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, facere. Similique, inventore nobis quae dolor corrupti molestias aliquam, 
+                            cupiditate reiciendis ullam saepe repellendus quisquam, dolorem omnis exercitationem excepturi ex? Aut.
+                        </p>
+                    </div>
+                </div>
+                <div class="ins-box">
+                    <div class="info">
+                        <div class="info-title">
+                            <h3>Ahmed Mohamed</h3>
+                            <span>Data Analyst</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, facere. Similique, inventore nobis quae dolor corrupti molestias aliquam, 
+                            cupiditate reiciendis ullam saepe repellendus quisquam, dolorem omnis exercitationem excepturi ex? Aut.
+                        </p>
+                    </div>
+                    <div class="image img-right">
+                        <img src="images/Ins2.jpg" alt="">
+                        <div class="social-media social-media-right">
+                            <div class="icon">
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ins-box">
+                    <div class="image img-left">
+                        <img src="images/Ins3.jpg" alt="">
+                        <div class="social-media social-media-left">
+                            <div class="icon">
+                                <i class="fa-brands fa-facebook"></i>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                            <div class="icon">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="info-title">
+                            <h3>Omar Salem</h3>
+                            <span>Developer</span>
+                        </div>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, facere. Similique, inventore nobis quae dolor corrupti molestias aliquam, 
+                            cupiditate reiciendis ullam saepe repellendus quisquam, dolorem omnis exercitationem excepturi ex? Aut.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- end Instractor -->
+        <!-- start student -->
+            <section id="Testimonials" class="stu">
+                <div class="container">
+                <div class="title">
+                    <h3>What's Our Student's Said</h3>
+                </div>
+                <div class="stu-con">
+                    <div class="stu-box">
+                        <img src="images/stu1.jpg" alt="">
+                        <p><span class="quote">&ldquo;</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Vitae, labore exercitationem dolores placeat, consequatur 
+                            libero doloribus blanditiis beatae maiores cupiditate eius ipsum aspernatur 
+                            dicta fugit quasi maxime magnam numquam. Laboriosam.<span class="quote">&rdquo;</span>
+                        </p>
+                        <h3>Samar Ashraf</h3>
+                    </div>
+                    <div class="stu-box">
+                        <img src="images/stu2.jpg" alt="">
+                        <p><span class="quote">&ldquo;</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Vitae, labore exercitationem dolores placeat, consequatur 
+                            libero doloribus blanditiis beatae maiores cupiditate eius ipsum aspernatur 
+                            dicta fugit quasi maxime magnam numquam. Laboriosam.<span class="quote">&rdquo;</span>
+                        </p>
+                        <h3>Samar Ashraf</h3>
+                    </div>
+                    <div class="stu-box">
+                        <img src="images/stu3.jpg" alt="">
+                        <p><span class="quote">&ldquo;</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Vitae, labore exercitationem dolores placeat, consequatur 
+                            libero doloribus blanditiis beatae maiores cupiditate eius ipsum aspernatur 
+                            dicta fugit quasi maxime magnam numquam. Laboriosam.<span class="quote">&rdquo;</span>
+                        </p>
+                        <h3>Samar Ashraf</h3>
+                    </div>
+                    <div class="stu-box">
+                        <img src="images/stu4.jpg" alt="">
+                        <p><span class="quote">&ldquo;</span>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Vitae, labore exercitationem dolores placeat, consequatur 
+                            libero doloribus blanditiis beatae maiores cupiditate eius ipsum aspernatur 
+                            dicta fugit quasi maxime magnam numquam. Laboriosam.<span class="quote">&rdquo;</span>
+                        </p>
+                        <h3>Samar Ashraf</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end student -->
+        <!-- start partner -->
+        <section id="Partner" class="partner">
+            <div class="container">
+                <div class="overlay-partner">
+                    <img src="images/amazon-pay.png" alt="">
+                    <img src="images/microsoft.png" alt="">
+                    <img src="images/box.png" alt="">
+                    <img src="images/intel.png" alt="">
+                    <img src="images/search.png" alt="">
+                    <img src="images/dell.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- end partner -->
+        <!-- start contact -->
+        <div class="container">
+            <section id="contact Us" class="contact">
+                <div class="contact-box">
+                    <div class="text">
+                        <i class="fa-solid fa-braille"></i>
+                        <h2>Contact US</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolorem animi excepturi molestias 
+                            perferendis itaque a et esse doloremque.
+                        </p>
+                    </div>
+                    <div class="inputs">
+                        <div class="full-name">
+                            <div class="first">
+                                <label for="first-name">First name</label>
+                                <input type="text" name="first-name" id="first-name">
+                            </div>
+                            <div class="last">
+                                <label for="last-name">Last name</label>
+                                <input type="text" name="last-name" id="last-name">
+                            </div>
+                        </div>
+                        <div class="mail">
+                            <label for="mail">E-mail</label>
+                            <input type="text" name="mail" id="mail">
+                        </div>
+                        <div class="msg">
+                            <label for="msg">What we can help you with?</label>
+                            <textarea type="text" name="msg" id="msg"></textarea>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </div>
+                    <i class="fa-solid fa-braille"></i>
+                </div>
+            </section>
+        </div>
+        <!-- end contact -->
+        <!-- start footer -->
+        <footer>
+            <div class="container d-flex">
+                <div class="contact-foot">
+                    <a href="index.html"><img src="images/logo 2.png" alt=""></a>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quod ea repellat tempore suscipit tenetur.
+                    </p>
+                    <div class="icons-foot">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="content-foot">
+                    <div class="course-foot">
+                        <h3>Courses</h3>
+                        <ul>
+                            <li><a href="#">Ui/Ux</a></li>
+                            <li><a href="#">Web development</a></li>
+                            <li><a href="#">Marketing</a></li>
+                        </ul>
+                    </div>
+                    <div class="resourse">
+                        <h3>Resourse</h3>
+                        <ul class="links">
+                            <li><a href="#"  data-section=".ins" class="link">Instractor</a></li>
+                            <li><a href="#"  data-section=".stu" class="link">Testimonials</a></li>
+                            <li><a href="#"  data-section=".partner" class="link">Partner</a></li>
+                        </ul>
+                    </div>
+                    <div class="company">
+                        <h3>Company</h3>
+                        <ul class="links">
+                            <li><a href="#" data-section=".about-us" class="link">About Us</a></li>
+                            <li><a href="#"  data-section=".Feature" class="link">Features</a></li>
+                            <li><a href="#" data-section=".timeline" class="link">History</a></li>
+                            <li><a href="#"  data-section=".contact" class="link">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+        <script src="JS/main.js"></script>
+    </body>
+</html>
