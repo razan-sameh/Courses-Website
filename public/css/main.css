@@ -5,7 +5,8 @@
     --asidecolor: #9bd2e7;
     --graycolor : #8080808a;
     --groundcolor:#efefef4d;
-    --titlecolor : #48545a;
+    --titlecolor : #4797b5;
+    --darkgray : #48545a;
 }
 .title h3{
     text-align: center;
